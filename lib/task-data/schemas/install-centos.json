@@ -61,6 +61,12 @@
         },
         "progressMilestones": {
             "$ref": "types-installos.json#/definitions/ProgressMilestones"
+        },
+        "packages": {
+            "$ref": "types-installos.json#/definitions/PackagesArray"
+        },
+        "cleanupDisks": {
+            "$ref": "types-installos.json#/definitions/CleanupDisks"
         }
     },
     "required": ["osType", "version", "repo", "profile", "installScript",

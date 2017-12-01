@@ -319,6 +319,18 @@
             "type": "string",
             "description": "Extra (persistent) kernel boot parameters",
             "minLength": 1
+        },
+        "PackagesArray": {
+            "description": "specify additional packages to install",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "uniqueItems": true
+        },
+        "CleanupDisks": {
+            "description": "a flag to indicate whether partitions should be cleared",
+            "type": "boolean"
         }
     }
 }
